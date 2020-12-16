@@ -1,0 +1,100 @@
+:root {
+  /*  https://pigment.shapefactory.co/?s=3&a=E7DDD1&b=786E61  */
+  --main-bg-color: #E7DDD1;
+  --main-bg-light-color: #FDF5EB;
+  --header-bg-color: #554B41;
+  --main-text-color: #554B41;
+  --main-hover-text-color: #908677;
+  --header-text-color: #C5B9AB;
+  --main-text-size: 16px;
+  --caption-text-size: 24px;
+  --large-text-size: 32px;
+}
+
+* {
+  font-size: var(--main-text-size);
+  color: var(--main-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a::before {
+  content: "> ";
+}
+
+a:hover {
+  color: var(--main-hover-text-color);
+  border-bottom: 2px solid var(--main-text-color);
+}
+
+h1 {
+  font-size: var(--large-text-size);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--caption-text-size);
+  border-bottom: 2px solid var(--main-text-color);
+  text-align: center;
+}
+
+h3 {
+  padding-left: 8px;
+  font-size: var(--caption-text-size);
+  border-left: 8px solid var(--main-text-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+/*--  header  --*/
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--header-bg-color);
+}
+
+#header__global-nav {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header__hero {
+  text-align: center;
+  color: var(--header-text-color);
+}
+
+/*--    main-content    --*/
+#main-content {
+  width: 980px;
+  margin: 60px auto;
+}
+
+.table-of-contents {
+  width: 640px;
+  margin: 0 auto;
+  padding: 4px;
+  background-color: var(--main-bg-light-color);
+  border-radius: 24px;
+}
+
+.table-of-contents__list {
+  padding-left: 24px;
+}
+
+.table-of-contents__element {
+  margin-left: 16px;
+  padding: 4px;
+}
+
+.sub-content {
+  margin: 8px;
+  padding: 8px;
+}
+/*# sourceMappingURL=main.css.map */

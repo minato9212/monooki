@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>みなとの物置</title>
+    <link rel="stylesheet" href="styles/main/main.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2MH39L17N"></script>
     <script>
@@ -16,12 +17,22 @@
 </head>
 
 <body>
-    <header>
-        <h1>みなとの物置</h1>
+    <header id="header">
+        <nav id="header__global-nav">
+            <h1 id="header__hero">みなとの物置</h1>
+        </nav>
     </header>
-    <main>
-        <p>マインスイーパー</p>
-        <a href="https://github.com/minato9212/monooki/releases/download/0.1.0/minesweeper.exe">クリックでダウンロード</a>
+    <main id="main-content">
+        <div class="table-of-contents">
+            <h2>目次</h2>
+            <ol class="table-of-contents__list">
+                <li class="table-of-contents__element"><a href="#siv3d-minesweeper">マインスイーパー</a></li>
+            </ol>
+        </div>
+        <div id="siv3d-minesweeper" class="sub-content">
+            <h3>マインスイーパー</h3>
+            <a href="https://github.com/minato9212/monooki/releases/download/0.1.0/minesweeper.exe">クリックでダウンロード</a>
+        </div>
     </main>
 </body>
 
