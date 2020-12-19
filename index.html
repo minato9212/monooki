@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>みなとの物置</title>
     <link rel="stylesheet" href="styles/main/main.css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2MH39L17N"></script>
     <script>
@@ -13,6 +14,15 @@
         gtag('js', new Date());
 
         gtag('config', 'G-L2MH39L17N');
+    </script>
+
+    <!--    Splide (splide.js)      -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            new Splide('.splide').mount();
+        });
     </script>
 </head>
 
@@ -30,7 +40,16 @@
             </ol>
         </div>
         <div id="siv3d-minesweeper" class="sub-content">
-            <h3>マインスイーパー</h3>
+            <h2>マインスイーパー</h2>
+            <div class="splide splide-minesweeper">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="asset/image/minesweeper/title-image.png" alt=""></li>
+                        <li class="splide__slide"><img src="asset/image/minesweeper/game-image.png" alt=""></li>
+                        <li class="splide__slide"><img src="asset/image/minesweeper/gameover-image.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
             <a href="https://github.com/minato9212/monooki/releases/download/0.1.0/minesweeper.exe">クリックでダウンロード</a>
         </div>
     </main>

@@ -95,9 +95,13 @@ body {
   padding: 4px;
 }
 
-.sub-content {
-  margin: 8px;
-  padding: 8px;
+.splide-minesweeper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.splide-minesweeper div ul li img {
+  width: 100%;
 }
 
 @media screen and (max-width: 980px) {
